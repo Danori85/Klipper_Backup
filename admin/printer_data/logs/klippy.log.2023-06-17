@@ -1,0 +1,34 @@
+Starting Klippy...
+Starting Klippy...
+Args: ['/home/admin/klipper/klippy/klippy.py', '/home/admin/printer_data/config/printer.cfg', '-l', '/home/admin/printer_data/logs/klippy.log', '-I', '/home/admin/printer_data/comms/klippy.serial', '-a', '/home/admin/printer_data/comms/klippy.sock']
+Git version: 'v0.12.0-85-gd785b396'
+Branch: master
+Remote: origin
+Tracked URL: https://github.com/Klipper3d/klipper.git
+CPU: 4 core ?
+Python: '3.9.2 (default, Feb 28 2021, 17:03:44) \n[GCC 10.2.1 20210110]'
+Building C code module c_helper.so
+Start printer at Sun Jun 18 10:58:38 2023 (1687100319.0 59.3)
+Unable to open config file /home/admin/printer_data/config/printer.cfg
+Traceback (most recent call last):
+  File "/home/admin/klipper/klippy/configfile.py", line 158, in _read_config_file
+    f = open(filename, 'r')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/admin/printer_data/config/printer.cfg'
+Config error
+Traceback (most recent call last):
+  File "/home/admin/klipper/klippy/configfile.py", line 158, in _read_config_file
+    f = open(filename, 'r')
+FileNotFoundError: [Errno 2] No such file or directory: '/home/admin/printer_data/config/printer.cfg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/klipper/klippy/klippy.py", line 175, in _connect
+    self._read_config()
+  File "/home/admin/klipper/klippy/klippy.py", line 134, in _read_config
+    config = pconfig.read_main_config()
+  File "/home/admin/klipper/klippy/configfile.py", line 282, in read_main_config
+    data = self._read_config_file(filename)
+  File "/home/admin/klipper/klippy/configfile.py", line 164, in _read_config_file
+    raise error(msg)
+configparser.Error: Unable to open config file /home/admin/printer_data/config/printer.cfg
